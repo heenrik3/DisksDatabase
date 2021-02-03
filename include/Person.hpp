@@ -33,6 +33,8 @@ public:
     std::string getCpf();
     int getAge();
 
+    void getPerson();
+
 };
 
 

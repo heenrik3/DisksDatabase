@@ -19,6 +19,7 @@ Person::Person(std::string name, std::string address, std::string cpf, int age)
 }
 Person::~Person()
 {
+    std::cout << "destroying person" << '\n';
     destroy();
 }
 
@@ -69,4 +70,12 @@ std::string Person::getCpf()
 int Person::getAge()
 {
     return *this->age;
+}
+
+void Person::getPerson()
+{
+    std::cout << getName() << '\n';
+    std::cout << getAddress() << '\n';
+    std::cout << getCpf() << '\n';
+    std::cout << std::to_string(getAge()) << '\n';
 }
